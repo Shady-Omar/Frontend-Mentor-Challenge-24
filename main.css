@@ -154,7 +154,7 @@ header {
 }
 
 .nav-bar .links #feat::after {
-    content: url("/images/icon-arrow-down.svg");
+    content: url("images/icon-arrow-down.svg");
     position: absolute;
     top: -15%;
     right: -15px;
@@ -171,7 +171,7 @@ header {
 }
 
 .nav-bar .links #comp::after {
-    content: url("/images/icon-arrow-down.svg");
+    content: url("images/icon-arrow-down.svg");
     position: absolute;
     top: -15%;
     right: -15px;
@@ -398,7 +398,7 @@ main {
     }
 
     #feat-mob::after {
-        content: url("/images/icon-arrow-down.svg");
+        content: url("images/icon-arrow-down.svg");
         position: absolute;
         top: -15%;
         right: -20px;
@@ -410,7 +410,7 @@ main {
     }
 
     #comp-mob::after {
-        content: url("/images/icon-arrow-down.svg");
+        content: url("images/icon-arrow-down.svg");
         position: absolute;
         top: -15%;
         right: -20px;
