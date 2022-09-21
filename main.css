@@ -1,0 +1,506 @@
+body {
+    font-family: 'Epilogue', sans-serif;
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden; 
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 98%);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    margin: 2rem;
+    margin-right: 0.5rem;
+    margin-left: 3.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mob-nav {
+    display: none;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    margin-right: 4.5rem;
+}
+
+.nav-bar .links {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar .links a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.nav-bar .links .feat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    transition: 0.2s;
+}
+
+.nav-bar .links .feat .feature {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    top: 30px;
+    right: -15px;
+    width: 142px;
+    transition: 0.2s;
+}
+
+.nav-bar .links .feat .feature ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0 20px;
+    width: 80%;
+}
+
+.nav-bar .links .feat .feature ul li {
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+}
+
+.nav-bar .links .feat .feature ul li:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.nav-bar .links .feat .feature ul li:last-of-type {
+    margin-bottom: 0px;
+}
+
+.nav-bar .links .feat .feature ul li img {
+    margin-right: 10px;
+}
+
+.nav-bar .links .comp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    transition: 0.2s;
+}
+
+.nav-bar .links .comp .comps {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 115px;
+    transition: 0.2s;
+    left: 0;
+}
+
+.nav-bar .links .comp .comps ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0 20px;
+}
+
+.nav-bar .links .comp .comps ul li {
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+}
+
+.nav-bar .links .comp .comps ul li:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.nav-bar .links .comp .comps ul li:last-of-type {
+    margin-bottom: 0px;
+}
+
+.nav-bar .links #feat {
+    position: relative;
+}
+
+.nav-bar .links #feat::after {
+    content: url("/images/icon-arrow-down.svg");
+    position: absolute;
+    top: -15%;
+    right: -15px;
+    transition: 0.2s;
+}
+
+.nav-bar .links #feat:hover::after {
+    transform: rotate(180deg);
+    top: 0%;
+}
+
+.nav-bar .links #comp {
+    position: relative;
+}
+
+.nav-bar .links #comp::after {
+    content: url("/images/icon-arrow-down.svg");
+    position: absolute;
+    top: -15%;
+    right: -15px;
+    transition: 0.2s;
+}
+
+.nav-bar .links #comp:hover::after {
+    transform: rotate(180deg);
+    top: 0%;
+}
+
+.nav-bar .links a:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.nav-bar .login {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.nav-bar .login #log {
+    border: none;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-bar .login #reg {
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Epilogue', sans-serif;
+    font-size: 15px;
+    border-radius: 13px;
+    color: hsl(0, 0%, 41%);
+    border: 2px solid hsl(0, 0%, 41%);
+    padding: 13px 20px;
+    cursor: pointer;
+    margin: 0 1rem;
+    transition: 0.2s;
+}
+
+.nav-bar .login #log:hover, .nav-bar .login #reg:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.nav-bar .login #reg:hover {
+    border: 2px solid hsl(0, 0%, 8%);
+}
+
+.hide {
+    display: none !important;
+}
+
+/* /////////////////////////// */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0 10rem;
+}
+
+.text-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+}
+
+.text-side .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+
+.text-side .text h1 {
+    font-weight: 700;
+    font-size: 3.5em;
+    width: 90%;
+}
+
+.text-side .text p {
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+    margin-top: 0;
+    line-height: 1.5rem;
+}
+
+.text-side .text button {
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Epilogue', sans-serif;
+    font-size: 15px;
+    margin-top: 1rem;
+    border-radius: 13px;
+    color: hsl(0, 0%, 98%);
+    border: 2px solid hsl(0, 0%, 8%);
+    padding: 13px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.text-side .text button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    border: 2px solid hsl(0, 0%, 8%);
+}
+
+.text-side .company {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.text-side .company img {
+    margin-right: 2rem;
+}
+
+.text-side .company img:last-of-type {
+    margin-right: 0;
+}
+
+#image{
+    width: 35%;
+}
+
+#image-mob {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    
+    header {
+        justify-content: space-between;
+        max-height: 90px;
+    }
+    
+    .logo {
+        margin: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+    
+    .mob-nav {
+        display: block;
+        margin: 2rem;
+        margin-right: 1.5rem;
+        position: relative;
+    }
+    
+    .mob-nav .menu {
+        position: relative;
+    }
+    
+    .mob-nav .menu .close {
+        z-index: 5;
+        position: absolute;
+        top: -15px;
+        left: -30px;
+    }
+
+    .mob-nav .menu .overlay {
+        position: fixed; /* Sit on top of the page content */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    }
+
+    
+    .menu-expand {
+        position: fixed;
+        top: 0;
+        width: 65vw;
+        height: 100vh;
+        background: white;
+        transform: translateX(100%);
+        transition: all .3s ease-in;
+        display: flex;
+        text-align: left;
+        z-index: 4;
+        right: 65%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .menu-expand .nav-list {
+        transform: translateY(5rem);
+    }
+
+    .menu-expand .nav-list ul li {
+        color: hsl(0, 0%, 41%);
+        font-size: 20px;
+        transition: 0.2s;
+        list-style: none;
+        margin-bottom: 2rem;
+    }
+
+    .menu-expand .nav-list ul ul li {
+        font-size: 20px;
+        margin-bottom: 1.5rem;
+    }
+
+    #feat-mob {
+        position: relative;
+    }
+
+    #feat-mob::after {
+        content: url("/images/icon-arrow-down.svg");
+        position: absolute;
+        top: -15%;
+        right: -20px;
+        transition: 0.2s;
+    }
+    
+    #comp-mob {
+        position: relative;
+    }
+
+    #comp-mob::after {
+        content: url("/images/icon-arrow-down.svg");
+        position: absolute;
+        top: -15%;
+        right: -20px;
+        transition: 0.2s;
+    }
+
+    .menu-expand .login {
+        display: flex;
+        flex-direction: column;
+        transform: translate(0px, 80px);
+    }
+
+    .menu-expand .login #log {
+        border: none;
+        background-color: hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 41%);
+        font-family: 'Epilogue', sans-serif;
+        font-size: 18px;
+        padding: 15px 20px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .menu-expand .login #reg {
+        background-color: hsl(0, 0%, 98%);
+        font-family: 'Epilogue', sans-serif;
+        font-size: 15px;
+        border-radius: 13px;
+        color: hsl(0, 0%, 41%);
+        border: 2px solid hsl(0, 0%, 41%);
+        padding: 13px 78px;
+        cursor: pointer;
+        margin: 0 1rem;
+        transition: 0.2s;
+    }
+
+    .menu-expand .login #log:focus {
+        color: hsl(0, 0%, 8%);
+    }
+    
+    .menu-expand .login #reg:focus {
+        border: 2px solid hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 8%);
+    }
+
+    /* //////////////////// */
+    
+    main {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        min-width:375px;
+        margin: 0;
+    }
+
+    .text-side {
+        order: 1;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text-side .text {
+        align-items: center;
+        margin-bottom: 3rem;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+    }
+
+    .text-side .text h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .text-side .text p {
+        text-align: center;
+        width: 90%;
+    }
+
+    .text-side .company img {
+        margin-right: 15px;
+        width: 20%;
+    }
+
+    #image {
+        display: none;
+    }
+
+    #image-mob {
+        display: block;
+        width: 100%;
+    }
+}

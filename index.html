@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <!-- ************ -->
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="snap">
+    </div>
+    <div class="nav-bar">
+      <div class="links">
+        <div class="feat">
+          <a href="#" id="feat">Features</a>
+          <div class="feature hide">
+            <ul>
+              <li><img src="images/icon-todo.svg" alt="todo"> Todo List</li>
+              <li><img src="images/icon-calendar.svg" alt="calendar"> Calendar</li>
+              <li><img src="images/icon-reminders.svg" alt="reminders"> Reminders</li>
+              <li><img src="images/icon-planning.svg" alt="planning"> Planning</li>
+            </ul>
+          </div>
+        </div>
+        <div class="comp">
+          <a href="#" id="comp">Company</a>
+          <div class="comps hide">
+            <ul>
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+        </div>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+      </div>
+      <div class="login">
+        <button id="log">Login</button>
+        <button id="reg">Register</button>
+      </div>
+    </div>
+    <div class="mob-nav">
+      <div class="menu">
+        <img class="open" src="images/icon-menu.svg" alt="menu">
+        <img class="close hide" src="images/icon-close-menu.svg" alt="close">
+        <div class="overlay hide"></div>
+      </div>
+      <div class="menu-expand hide">
+        <div class="nav-list">
+          <ul>
+            <li id="feat-mob">Features</li>
+            <ul class="feat-mob hide">
+              <li><img src="images/icon-todo.svg" alt="todo"> Todo List</li>
+              <li><img src="images/icon-calendar.svg" alt="calendar"> Calendar</li>
+              <li><img src="images/icon-reminders.svg" alt="reminders"> Reminders</li>
+              <li><img src="images/icon-planning.svg" alt="planning"> Planning</li>
+            </ul>
+            <li id="comp-mob" >Company</li>
+            <ul class="comp-mob hide">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="login">
+          <button id="log">Login</button>
+          <button id="reg">Register</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /////////////////////////// -->
+  <main>
+    <div class="text-side">
+      <div class="text">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+        <button>Learn more</button>
+      </div>
+      <div class="company">
+        <img src="images/client-databiz.svg" alt="databiz">
+        <img src="images/client-audiophile.svg" alt="audiophile">
+        <img src="images/client-meet.svg" alt="meet">
+        <img src="images/client-maker.svg" alt="maker">
+      </div>
+    </div>
+      <img id="image" src="images/image-hero-desktop.png" alt="hero">
+      <img id="image-mob" src="images/image-hero-mobile.png" alt="hero">
+  </main>
+  <script src="dist/index.js"></script>
+</body>
+</html>
